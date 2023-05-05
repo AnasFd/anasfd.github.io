@@ -1,0 +1,204 @@
+/* General */
+body {
+    background: #0c0b09;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+h2 {
+    font-size: 1rem;
+    color: aliceblue;
+    padding-bottom: 20px;
+}
+
+/* Contact */
+#tel {
+    height: 30px;
+    font-size: 12px;
+    transition: top 0.4s ease-in-out;
+}
+
+#tel.tel-scrolled {
+    top: -30px;
+}
+
+/* End Contact */
+
+
+/* Header */
+#header {
+    position: fixed;
+    top: 30px;
+    transition: top 0.4s ease-in-out;
+}
+
+#header.header-scrolled {
+    top: 0;
+    background: rgba(0, 0, 0, 0.85);
+    border-bottom: 1px solid #37332a;
+}
+
+/* navbar */
+.navbar {
+    height: 80px !important;
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    margin-left: 200px !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(188, 144, 32) !important;
+}
+
+.navbar-nav .active>.nav-link {
+    color: rgb(188, 144, 32);
+}
+
+.navbar-nav .nav-link {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    margin-left: 0px !important;
+    margin-right: 100px !important;
+}
+
+/* End navbar */
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url('/gallery/bg.jpg') top center;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+}
+
+#hero:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Section general */
+section {
+    padding: 80px;
+    overflow: hidden;
+    /* height: 100vh; */
+}
+
+.section-bg {
+    background-color: #0c0c0c;
+}
+
+/* Gallery */
+.gal-item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.gal-item img {
+    transition: transform 0.3s ease-out;
+}
+
+.gal-item:hover img {
+    transform: scale(1.1);
+}
+
+.btn {
+    margin-right: 0px !important;
+}
+
+/* Contact */
+.my-form {
+    background: transparent;
+    padding: 0 30px 30px 0px;
+}
+
+form .form-control {
+    background: transparent;
+    border-color: rgb(188, 144, 32);
+}
+
+.form-control {
+    color: whitesmoke !important;
+}
+
+.my-form .form-control:focus {
+    background-color: transparent !important;
+    border-color: whitesmoke !important;
+    box-shadow: none !important;
+}
+
+/* Contact button */
+button[type="submit"] {
+    background-color: rgb(188, 144, 32);
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(194, 153, 47);
+}
+
+.contact .info {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contact .info i {
+    font-size: 40px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .info p{
+    padding: 10px 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: whitesmoke;
+}
