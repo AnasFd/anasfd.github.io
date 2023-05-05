@@ -121,7 +121,7 @@ section {
 
 /* Gallery */
 #gallerie {
-    user-select: none;
+    user-select: none; /* prevent img selection */
 }
 
 .gal-item {
