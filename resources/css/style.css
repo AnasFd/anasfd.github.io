@@ -120,9 +120,8 @@ section {
 }
 
 /* Gallery */
-.gallerie img{
+#gallerie {
     user-select: none;
-    -webkit-user-drag: none;
 }
 
 .gal-item {
@@ -134,7 +133,6 @@ section {
 
 .gal-item img {
     transition: transform 0.3s ease-out;
-    draggable: false; /* Prevents dragging of images */
 }
 
 .gal-item:hover img {
