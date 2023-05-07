@@ -82,9 +82,19 @@ h2 {
     align-items: center;
 }
 
-.btn {
-    margin-left: 0px !important;
-    margin-right: 100px !important;
+.sbtn {
+    font-family: 'Roboto' sans-serif;
+    background-color: transparent;
+    padding: 0.4rem 1rem;
+    color: white;
+    border-radius: 15px ;
+    margin-right: 60px ;
+    border-color: rgb(194, 153, 47);
+}
+
+.sbtn:hover {
+    background-color: rgb(188, 144, 32);
+    border-color: #fff;
 }
 
 /* End navbar */
@@ -120,10 +130,6 @@ section {
 }
 
 /* Gallery */
-#gallerie {
-    user-select: none; /* prevent img selection */
-}
-
 .gal-item {
     position: relative;
     overflow: hidden;
@@ -133,6 +139,9 @@ section {
 
 .gal-item img {
     transition: transform 0.3s ease-out;
+    /* Preventing img drag in firefox */
+    user-drag: none;
+    -webkit-user-drag: none;
 }
 
 .gal-item:hover img {
@@ -222,4 +231,23 @@ button[type="submit"]:hover {
     padding: 10px 20px;
     font-size: 16px;
     color: whitesmoke;
+}
+
+/* Login section */
+#login {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100vh;
+}
+
+#login .sign-in{
+    padding: 30px;
+}
+
+#login h1{
+    text-align: center;
+    padding: 50px 50px;
+}
+#login .sign-up {
+    padding: 30px;
+    border-left: 2px solid rgb(194, 153, 47);
 }
