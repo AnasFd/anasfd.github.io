@@ -1,7 +1,7 @@
 /* General */
 body {
-    background: #0c0b09;
-    color: #fff;
+    background: whitesmoke;
+    color: black;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -16,12 +16,12 @@ h6 {
 
 h1 {
     font-size: 2rem;
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 
 h2 {
     font-size: 1rem;
-    color: aliceblue;
+    color: black;
     padding-bottom: 20px;
 }
 
@@ -48,14 +48,14 @@ h2 {
 
 #header.header-scrolled {
     top: 0;
-    background: rgba(0, 0, 0, 0.85);
-    border-bottom: 1px solid #37332a;
+    background: rgba(255, 255, 255);
+    border-bottom: 1px solid black;
 }
 
 /* navbar */
 .navbar {
     height: 80px !important;
-    background-color: rgba(0, 0, 0, 0.2) !important;
+    background-color: rgba(255, 255, 255, 0.2) !important;
     backdrop-filter: blur(5px);
     display: flex;
     align-items: center;
@@ -63,14 +63,15 @@ h2 {
 
 .navbar-brand {
     margin-left: 200px !important;
+    color: black !important;
 }
 
 .navbar-nav .nav-link:hover {
-    color: rgb(188, 144, 32) !important;
+    color: rgb(194, 47, 91) !important;
 }
 
 .navbar-nav .active>.nav-link {
-    color: rgb(188, 144, 32);
+    color: rgb(194, 47, 91);
 }
 
 .navbar-nav .nav-link {
@@ -80,20 +81,21 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: black !important;
 }
 
 .sbtn {
     font-family: 'Roboto' sans-serif;
-    background-color: transparent;
+    background-color: rgb(194, 50, 91);
     padding: 0.4rem 1rem;
-    color: white;
+    color: black;
     border-radius: 15px ;
     margin-right: 60px ;
-    border-color: rgb(194, 153, 47);
+    border-color: black;
 }
 
 .sbtn:hover {
-    background-color: rgb(188, 144, 32);
+    background-color: rgb(194, 47, 91);
     border-color: #fff;
 }
 
@@ -126,7 +128,7 @@ section {
 }
 
 .section-bg {
-    background-color: #0c0c0c;
+    background-color: whitesmoke;
 }
 
 /* Gallery */
@@ -142,6 +144,9 @@ section {
     /* Preventing img drag in firefox */
     user-drag: none;
     -webkit-user-drag: none;
+    height: 440px !important;
+    display: block;
+    width: 100%;
 }
 
 .gal-item:hover img {
@@ -160,24 +165,24 @@ section {
 
 form .form-control {
     background: transparent;
-    border-color: rgb(188, 144, 32);
+    border-color: rgb(194, 47, 91);
 }
 
 .form-control {
-    color: whitesmoke !important;
+    color: black !important;
 }
 
 .my-form .form-control:focus {
     background-color: transparent !important;
-    border-color: whitesmoke !important;
+    border-color: black !important;
     box-shadow: none !important;
 }
 
 /* Contact button */
 button[type="submit"] {
-    background-color: rgb(188, 144, 32);
+    background-color: rgb(194, 47, 91);
     border: none;
-    color: black;
+    color: #fff;
     padding: 10px 20px;
     margin-top: 20px;
     text-align: center;
@@ -190,7 +195,8 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: rgb(194, 153, 47);
+    background-color: rgb(194, 50, 91);
+    color: #fff;
 }
 
 .contact .info {
@@ -220,7 +226,7 @@ button[type="submit"]:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(188, 144, 32);
+    background-color: rgb(194, 47, 91);
     height: 50px;
     width: 50px;
     color: white;
@@ -230,7 +236,7 @@ button[type="submit"]:hover {
 .contact .info p{
     padding: 10px 20px;
     font-size: 16px;
-    color: whitesmoke;
+    color: black;
 }
 
 /* Login section */
@@ -249,5 +255,5 @@ button[type="submit"]:hover {
 }
 #login .sign-up {
     padding: 30px;
-    border-left: 2px solid rgb(194, 153, 47);
+    border-left: 2px solid rgb(194, 50, 91);
 }
