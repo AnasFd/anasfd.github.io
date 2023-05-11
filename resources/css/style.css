@@ -39,23 +39,23 @@ h2 {
 /* End Contact */
 
 
-/* Header */
-#header {
+/* navbarScrolled */
+#mynavbar {
     position: fixed;
     top: 30px;
     transition: top 0.4s ease-in-out;
 }
 
-#header.header-scrolled {
+#mynavbar.mynavbar-scrolled {
     top: 0;
-    background: rgba(255, 255, 255);
+    background-color: #FFFFFF !important;
+    color: black !important;
     border-bottom: 1px solid black;
 }
 
 /* navbar */
 .navbar {
     height: 80px !important;
-    background-color: rgba(255, 255, 255, 0.2) !important;
     backdrop-filter: blur(5px);
     display: flex;
     align-items: center;
@@ -64,10 +64,6 @@ h2 {
 .navbar-brand {
     margin-left: 200px !important;
     color: black !important;
-}
-
-.navbar-nav .nav-link:hover {
-    color: rgb(194, 47, 91) !important;
 }
 
 .navbar-nav .active>.nav-link {
@@ -81,22 +77,44 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black !important;
+    color: white;
 }
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(194, 47, 91) !important;
+}
+
+
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255) !important;
+    border-bottom: 1px solid black;
+    color: black;
+  }  
+
 
 .sbtn {
     font-family: 'Roboto' sans-serif;
     background-color: rgb(194, 50, 91);
     padding: 0.4rem 1rem;
-    color: black;
-    border-radius: 15px ;
+    color: white;
+    border: #fff;
+    border-radius: 15px;
     margin-right: 60px ;
-    border-color: black;
 }
 
 .sbtn:hover {
-    background-color: rgb(194, 47, 91);
-    border-color: #fff;
+    background-color: rgb(213, 79, 119);
 }
 
 /* End navbar */
@@ -128,7 +146,7 @@ section {
 }
 
 .section-bg {
-    background-color: whitesmoke;
+    background-color: #FFFFFF;
 }
 
 /* Gallery */
@@ -195,7 +213,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: rgb(194, 50, 91);
+    background-color: rgb(213, 79, 119);
     color: #fff;
 }
 
@@ -241,7 +259,7 @@ button[type="submit"]:hover {
 
 /* Login section */
 #login {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: #FFFFFF ;
     height: 100vh;
 }
 

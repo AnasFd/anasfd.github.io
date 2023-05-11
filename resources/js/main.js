@@ -1,26 +1,32 @@
 // Nav bar and tel transition
-const header = document.querySelector('#header');
+const navbar = document.querySelector('.navbar');
+const mynavbar = document.querySelector('#mynavbar');
 const tel = document.querySelector('#tel');
 
-if (header) {
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 100) {
-            header.classList.add('header-scrolled');
-            if (tel) {
-                tel.classList.add('tel-scrolled');
-            }
-        } else {
-            header.classList.remove('header-scrolled');
-            if (tel) {
-                tel.classList.remove('tel-scrolled');
-            }
+function navbarScrolled() {
+    if (window.scrollY > 100) {
+        navbar.classList.add('navbar-dark');
+        navbar.classList.remove('navbar-light');
+        if (mynavbar) {
+            mynavbar.classList.add('mynavbar-scrolled');
         }
-    });
-
-    window.addEventListener('load', headerScrolled)
-    onscroll(document, headerScrolled)
+        if (tel) {
+            tel.classList.add('tel-scrolled');
+        }
+    } else {
+        navbar.classList.remove('navbar-dark');
+        navbar.classList.add('navbar-light');
+        if (mynavbar) {
+            mynavbar.classList.remove('mynavbar-scrolled');
+        }
+        if (tel) {
+            tel.classList.remove('tel-scrolled');
+        }
+    }
 }
 
+window.addEventListener('load', navbarScrolled);
+window.addEventListener('scroll', navbarScrolled);
 
 // Gallery carousel
 $(document).ready(function () {
