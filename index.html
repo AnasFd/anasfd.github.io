@@ -1,267 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veloo</title>
-
-    <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- Style css -->
-    <link href="./resources/css/style.css" rel="stylesheet">
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
-    <!-- Bootstrap 5 icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
+    <title>Lupius | Personal Website</title>
+    <link rel="stylesheet" href="/resources/css/style.css">
 </head>
-
 <body>
 
-    <!-- tel -->
-    <div id="tel" class="d-flex align-items-center fixed-top">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-sm-4 text-center text-sm-start">
-                    <span class="fw-bold" style="color: rgba(255, 255, 255, 1);">Call us at:</span> <a
-                        href="tel:+1234567890" class="text-decoration-none text-light ms-2">+1 (234) 567-890</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--  End tel -->
-
-    <header id="mynavbar" class="fixed-top">
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Your Logo</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#hero">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#gallerie">Gallerie</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="d-flex justify-content-end">
-                    <a href="/login.html">
-                        <button type="button" class="sbtn"><i class="bi bi-box-arrow-in-right"></i> Espace
-                            privé</button>
-                    </a>
-                </div>
-            </div>
-        </nav>
-        <!-- End navbar  -->
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome | Bienvenue | Willkommen | ¡Bienvenido! | 欢迎 | Добро пожаловать | مرحباً</h1>
     </header>
-    <!-- End header -->
 
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex align-items-center">
-        <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
-            <div class="row">
-                <div class="col-lg-8">
-                    <h1>Welcome to <span>our website</span></h1>
-                    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ad eius natus non quaerat? Earum
-                        dignissimos velit, molestiae omnis quis, suscipit ratione molestias animi veritatis dolores modi
-                        porro quasi cupiditate?</h2>
-
-                    <div class="btns">
-                        <a href="#" class="btn-menu animated fadeInUp scrollto">a button</a>
-                        <a href="#" class="btn-book animated fadeInUp scrollto">a button</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><!-- End Hero -->
-
-    <main id="main">
-
-        <!-- ======= Gallery Section ======= -->
-        <section id="gallerie" class="gallerie section-bg">
-            <div class="container">
-                <!-- Titres -->
-                <h1>Gallerie</h1>
-                <h2>Explorez notre collection de photos inspirantes et découvrez nos projets récents</h2>
-                <!-- Photos -->
-                <div class="row row-cols-3">
-
-                    <div class="col">
-                        <a href="./resources/img/1.jpg" data-fancybox="gallery" data-caption="Caption #1">
-                            <div class="gal-item">
-                                <img src="./resources/img/1.jpg" draggable="false" ondragstart="return false" alt=""
-                                    class="img-fluid">
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col">
-                        <a href="./resources/img/2.jpg" data-fancybox="gallery" data-caption="Caption #2">
-                            <div class="gal-item">
-                                <img src="./resources/img/2.jpg" draggable="false" ondragstart="return false" alt=""
-                                    class="img-fluid">
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col">
-                        <a href="./resources/img/3.jpg" data-fancybox="gallery" data-caption="Caption #3">
-                            <div class="gal-item">
-                                <img src="./resources/img/3.jpg" draggable="false" ondragstart="return false" alt=""
-                                    class="img-fluid">
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col">
-                        <a href="./resources/img/bg.jpg" data-fancybox="gallery" data-caption="Caption #4">
-                            <div class="gal-item">
-                                <img src="./resources/img/bg.jpg" draggable="false" ondragstart="return false" alt=""
-                                    class="img-fluid">
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col">
-                        <a href="./resources/img/bg.jpg" data-fancybox="gallery" data-caption="Caption #5">
-                            <div class="gal-item">
-                                <img src="./resources/img/bg.jpg" draggable="false" ondragstart="return false" alt=""
-                                    class="img-fluid">
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col">
-                        <a href="./resources/img/bg.jpg" data-fancybox="gallery" data-caption="Caption #6">
-                            <div class="gal-item">
-                                <img src="./resources/img/bg.jpg" draggable="false" ondragstart="return false" alt=""
-                                    class="img-fluid">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!-- Voir plus -->
-                <div class="d-flex justify-content-center align-items-center">
-                    <button type="submit" class="btn">View More</button>
-                </div>
-            </div>
+    <!-- Main Content Container -->
+    <div class="container">
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p> 
+                Hi, I’m Anas, a final-year software engineering student. 
+                Since childhood, I’ve loved tinkering with computers. 
+                Here, you can explore my projects and skills. 
+            </p> 
+            <p> 
+                I love turning ideas into reality through code and design. 
+                Whether I'm working on academic or personal projects, 
+                my aim is to create effective and innovative solutions. 
+            </p>
         </section>
-        <!-- End Gallery Section -->
 
-        <!-- ======= Contact Section ======= -->
-        <section id="contact" class="contact section-bg">
-            <div class="container">
-                <!-- Titres -->
-                <h1>Contactez-nous</h1>
-                <h2>N'hésitez pas à nous contacter si vous avez des questions ou des commentaires.</h2>
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <p> 
+                Throughout my journey as an IT student and a passionate tech enthusiast, 
+                I’ve had the opportunity to work with diverse technologies. 
+                Including low-level programming languages like Assembly and C.
+                Multiple web dev frameworks such as node.js, spring boot,
+                as well as object-oriented languages such as Java and Python.
+            </p>
+            <p> 
+                While I wouldn’t claim to master every skill, 
+                The foundation that I accumulated, my adaptability and my love for the domain are all I need to learn new ones quickly. 
+            </p>
+            <p>
+                In summary, I've explored a wide variety of tools and concepts. After all the IT world is an iceberg.
+            </p> 
+        </section>
 
-                <div class="row mt-5">
-                    <!-- Form -->
-                    <div class="col-lg-8 mt-5 mt-lg-0">
-                        <form action="forms/contact.php" method="post" role="form" class="my-form">
-                            <!-- Nom prenom -->
-                            <div class="row">
-                                <div class="col-md-6 form-group">
-                                    <input type="text" name="name" class="form-control" id="name"
-                                        placeholder="Your Name" required>
-                                </div>
-                                <div class="col-md-6 form-group">
-                                    <input type="text" name="name" class="form-control" id="name"
-                                        placeholder="Your Last Name" required>
-                                </div>
-                            </div>
-                            <!-- Email -->
-                            <div class="form-group mt-3">
-                                <input type="email" class="form-control" name="email" id="email"
-                                    placeholder="Your Email" required>
-                            </div>
-                            <!-- Sujet -->
-                            <div class="form-group mt-3">
-                                <input type="text" class="form-control" name="subject" id="subject"
-                                    placeholder="Subject" required>
-                            </div>
-                            <!-- Message -->
-                            <div class="form-group mt-3">
-                                <textarea class="form-control" name="message" rows="5" placeholder="Message"
-                                    required></textarea>
-                            </div>
-                            <div class="text-center"><button type="submit">Send Message</button></div>
-                        </form>
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+                <!-- Project 1 -->
+                <div class="project">
+                    <div class="project-header" onclick="toggleDetails(this)">
+                        <h3>Autonomous drones ― Godot</h3>
+                        <button class="toggle-btn" aria-label="Expand project details">&#x25BC;</button>
                     </div>
-                    <!-- Infos -->
-                    <div class="col-lg-4">
-                        <div class="info">
-                            <div class="iitem">
-                                <div class="slogo">
-                                    <i class="bi bi-geo-fill"></i>
-                                </div>
-                                <div class="stext">
-                                    <p>Adress here</p>
-                                </div>
-                            </div>
-
-                            <div class="iitem">
-                                <div class="slogo">
-                                    <i class="bi bi-envelope-at"></i>
-                                </div>
-                                <div class="stext">
-                                    <p>info@example.com
-                                </div>
-                                </p>
-                            </div>
-
-                            <div class="iitem">
-                                <div class="slogo">
-                                    <i class="bi bi-phone"></i>
-                                </div>
-                                <div class="stext">
-                                    <p>+1 5589 55488 55
-                                </div>
-                                </p>
-                            </div>
-
-                            <div class="iitem">
-                                <div class="slogo">
-                                    <i class="bi bi-instagram"></i>
-                                </div>
-                                <div class="stext">
-                                    <p>ldsffhsdlfsdih</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="project-details">
+                        <p>
+                            This project was realized in collaboration with a colleague, 
+                            it consists of developing a multi-agent system composed of drones who form a sphere in 3D space. 
+                            The idea came to us while watching the drone show in the 2024 Paris Olympics.
+                            The drone as an entity has only 2 goals: Move to the sphere radius and avoid other drones.
+                            <br>
+                            For more information, checkout this <a href="https://github.com/AnasFd/autonomous-drones">link</a>
+                        </p>
+                        <video controls>
+                            <source src="/resources/vid/autonomous-drones.mp4" type="video/mp4">
+                            Your browser does not support the video. Checkout this <a href="https://github.com/AnasFd/autonomous-drones">link</a>
+                        </video>                        
                     </div>
                 </div>
-            </div>
         </section>
-        <!-- End Contact Section -->
 
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p class="contact-info">Email: <a href="mailto:e22011548@etudiant.univ-brest.fr">e22011548@etudiant.univ-brest.fr</a></p>
+            <p class="contact-info">LinkedIn: <a href="https://www.linkedin.com/in/anas-fouad-208254294/" target="_blank">linkedin.com/in/anasf</a></p>
+        </section>
+    </div>
 
-    </main><!-- End #main -->
-
-    <!-- General JS -->
-    <script src="./resources/js/main.js"></script>
-    <!-- Fancybox scripts for gallery -->
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-    <script>
-        Fancybox.bind('[data-fancybox="gallery"]', {
-            //
-        });    
-    </script>
+    <script src="/resources/js/main.js"></script>
 </body>
-
 </html>
+
