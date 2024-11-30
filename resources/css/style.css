@@ -123,9 +123,19 @@ header h1 {
     max-width: 50%; /* Restrict video to half the available width */
     height: auto; /* Maintain aspect ratio */
     border: 1px solid #444; /* Optional: Add a subtle border to the video */
-    border-radius: 5px; /* Optional: Rounded corners */
+    border-radius: 5px;
 }
 
+/* For smaller devices */
+@media (max-width: 600px) {
+    .project-details.show {
+        flex-direction: column;
+    }
+
+    .project-details video {
+        max-width: 100%;
+    }
+}
 
 /********** Contact section **********/
 #contact h2 {

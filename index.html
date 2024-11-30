@@ -1,61 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lupius | Personal Website</title>
-    <link rel="stylesheet" href="/resources/css/style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lupius | Personal Website</title>
+        <link rel="stylesheet" href="/resources/css/style.css">
+    </head>
+    <body>
 
-    <!-- Header Section -->
-    <header>
-        <h1>Welcome | Bienvenue | Willkommen | ¡Bienvenido! | 欢迎 | Добро пожаловать | مرحباً</h1>
-    </header>
+        <!-- Header Section -->
+        <header>
+            <h1>Welcome | Bienvenue | Willkommen | ¡Bienvenido! | 欢迎 | Добро пожаловать | مرحباً</h1>
+        </header>
 
-    <!-- Main Content Container -->
-    <div class="container">
-        <!-- About Section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p> 
-                Hi, I’m Anas, a final-year software engineering student. 
-                Since childhood, I’ve loved tinkering with computers. 
-            </p> 
-            <p> 
-                In fact, I love turning ideas into reality through code and design. 
-                Whether I'm working on academic or personal projects, 
-                my aim is to create effective and innovative solutions. 
-                Here, you can explore some of my projects.
-            </p>
-        </section>
+        <!-- Main Content Container -->
+        <div class="container">
+            <!-- About Section -->
+            <section id="about">
+                <h2>About Me</h2>
+                <p> 
+                    Hi, I’m Anas, a final-year software engineering student. 
+                    Since childhood, I’ve loved tinkering with computers. 
+                </p> 
+                <p> 
+                    In fact, I love turning ideas into reality through code and design. 
+                    Whether I'm working on academic or personal projects, 
+                    my aim is to create effective and innovative solutions. 
+                    Here, you can explore some of my projects.
+                </p>
+            </section>
 
-        <!-- Skills Section -->
-        <section id="skills">
-            <h2>Skills</h2>
-            <p> 
-                Throughout my journey as an IT student and a passionate tech enthusiast, 
-                I’ve had the opportunity to work with diverse technologies. 
-                Including low-level programming languages like Assembly and C.
-                Multiple web dev frameworks such as node.js, spring boot,
-                as well as object-oriented languages such as Java and Python.
-            </p>
-            <p> 
-                While I wouldn’t claim to master every skill, 
-                The foundation that I accumulated, my adaptability and my love for the domain are all I need to learn new ones quickly. 
-            </p>
-            <p>
-                In summary, I've explored a wide variety of tools and concepts. After all the IT world is an iceberg.
-            </p> 
-        </section>
+            <!-- Skills Section -->
+            <section id="skills">
+                <h2>Skills</h2>
+                <p> 
+                    Throughout my journey as an IT student and a passionate tech enthusiast, 
+                    I’ve had the opportunity to work with diverse technologies. 
+                    Including low-level programming languages like Assembly and C.
+                    Multiple web dev frameworks such as node.js, spring boot,
+                    as well as object-oriented languages such as Java and Python.
+                </p>
+                <p> 
+                    While I wouldn’t claim to master every skill, 
+                    The foundation that I accumulated, my adaptability and my love for the domain
+                    are all I need to learn new ones quickly. 
+                </p>
+                <p>
+                    In summary, I've explored a wide variety of tools and concepts. After all the IT world is an iceberg.
+                </p> 
+            </section>
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2>Projects</h2>
+            <!-- Projects Section -->
+            <section id="projects">
+                <h2>Projects</h2>
                 <!-- Project 1 -->
                 <div class="project">
                     <div class="project-header" onclick="toggleDetails(this)">
-                        <h3>Autonomous drones ― Godot</h3>
+                        <h3>Autonomous drones</h3>
                         <button class="toggle-btn" aria-label="Expand project details">&#x25BC;</button>
                     </div>
                     <div class="project-details">
@@ -65,30 +66,60 @@
                             The idea came to us while watching the drone show in the 2024 Paris Olympics.
                             The drone as an entity has only 2 goals: Move to the sphere radius and avoid other drones.
                             <br>
+                            <br>
                             For more information, checkout this <a href="https://github.com/AnasFd/autonomous-drones">link</a>
                         </p>
                         <video controls>
                             <source src="/resources/vid/autonomous-drones.mp4" type="video/mp4">
-                            Your browser does not support the video. Checkout this <a href="https://github.com/AnasFd/autonomous-drones">link</a>
-                        </video>                        
+                            Your browser does not support the video. Checkout this 
+                            <a href="https://github.com/AnasFd/autonomous-drones">link</a>
+                        </video>
                     </div>
                 </div>
-        </section>
+                
+                <!-- Project 2 -->
+                <div class="project">
+                    <div class="project-header" onclick="toggleDetails(this)">
+                        <h3>The Clash of Hobbies</h3>
+                        <button class="toggle-btn" aria-label="Expand project details">&#x25BC;</button>
+                    </div>
+                    <div class="project-details">
+                        <p>
+                            During my Sudoku obsession phase, I used this <a href="https://sudoku.com/">website</a> to play. 
+                            Then, I suddenly remembered that I was a developer, so naturally, 
+                            I decided to code my own version. At first, 
+                            I created a terminal-based version using C (<a href="https://github.com/AnasFd/sudoku-c">link</a>). 
+                            Later, I realized I needed a user interface, so I turned to Godot. 
+                            <br>
+                            <br>
+                            For more information, checkout this <a href="https://github.com/AnasFd/sudoku-godot">link</a>
+                        </p>
+                        <video controls>
+                            <source src="/resources/vid/sudoku-gd.mp4" type="video/mp4">
+                            Your browser does not support the video. Checkout this 
+                            <a href="https://github.com/AnasFd/sudoku-godot">link</a>
+                        </video>
+                    </div>
+                </div>
+                <p>More projects coming soon...</p>
+            </section>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>
+            <!-- Contact Section -->
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>
                     Well, enough about me, what about you?
                     <br>
                     Feel free to get in touch using one of the services bellow :)
-            </p>
-            <p class="contact-info">Email: <a href="mailto:anas.fd@proton.me">anas.fd@proton.me</a></p>
-            <p class="contact-info">LinkedIn: <a href="https://www.linkedin.com/in/anas-fouad-208254294/" target="_blank">linkedin.com/in/anasf</a></p>
-        </section>
-    </div>
+                </p>
+                <p class="contact-info">Email: <a href="mailto:anas.fd@proton.me">anas.fd@proton.me</a></p>
+                <p class="contact-info">LinkedIn: 
+                    <a href="https://www.linkedin.com/in/anas-fouad-208254294/" target="_blank">linkedin.com/in/anasf</a>
+                </p>
+            </section>
+        </div>
 
-    <script src="/resources/js/main.js"></script>
-</body>
+        <script src="/resources/js/main.js"></script>
+    </body>
 </html>
 
